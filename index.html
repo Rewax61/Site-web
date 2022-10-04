@@ -4,22 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bouillon Flers</title>
-    <style>
-        div{
-            position: absolute;
-            left: -11px;
-            top: -14px;
-            height: 100%;
-            width: 100%;
-        }
-    </style>
+    <title>Site web</title>
 </head>
 <body>
-    <div>
-        <object type="text/html" data="https://www.bouillonflers.fr"
-                style="width:100%; height:100%; margin:1%;">
-        </object>
-    </div>
+    <script>
+       const fs = require('fs')
+       let data = "Learning how to write in a file."
+       fs.writeFile('Output.txt', data, (err) => {
+      
+    // In case of a error throw err.
+    if (err) throw err;
+})
+    </script>
 </body>
 </html>
